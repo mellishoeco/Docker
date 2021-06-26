@@ -1,0 +1,27 @@
+➤ Image vs Containers 
+➤ run containers 
+➤ Check container logs & process
+➤ Why Containers required? 
+➤ What is Image? 
+➤ Image is the Application we want to run 
+➤ Containers is an running instance of an Image 
+➤ You can have many containers running the same image 
+➤ In this lecture we will use Open Source Nginx Web-Server 
+➤ Docker Central Repository (hub.docker.com)
+➤ Start with Hello World Docker Image 
+➤ Start Nginx web-server in Docker
+docker container run - -publish <host_port:container_port> 
+<image_name>
+➤ Process Done:
+Dowloaded the Images form Docker Hub
+Started new Container 
+Exposed port 80 on Host Machine
+Routes traffic to the container port 80
+➤ Stop Container fore-ground process
+ctrl+c
+➤ Start Container in Back-Ground or detach mode
+docker container run - -publish <host_port:container_port> 
+- -detach <image_name>
+➤ List running Containers
+docker container ls
+docker ps (Old Way)
