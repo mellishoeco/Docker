@@ -81,4 +81,20 @@ MYSQL_RANDOM_ROOT_PASSWORD=yes
 random password, created on start-up 
 ➤ Clean all the containers after the assignment done
 ----------------
+7. Assignment Answer  Manage Multiple Containers
+➤ This lecture is ANSWERs to the previous lecture assignment. 
+➤ Run a nginx, a mysql, and a apache server
+➤ Run all containers in background 
+➤ Provide a name to all containers 
+➤ Start nginx on port 80:80 
+➤ Start apache server on port 8080:80 
+➤ Start mysql on port 3306:3306
+➤ When running mysql, use - -env to pass the environment 
+variable 
+MYSQL_RANDOM_ROOT_PASSWORD=yes
+➤ Use docker container logs command on mysql to find the 
+random password, created on start-up 
+➤ Clean all the containers after the assignment done
+-------------------------
+
 
