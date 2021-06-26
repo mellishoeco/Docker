@@ -25,3 +25,44 @@ docker container run - -publish <host_port:container_port>
 ➤ List running Containers
 docker container ls
 docker ps (Old Way)
+---------------
+3. Stop-Remove the Containers
+➤ Stop Docker Containers
+docker container stop <container_id> 
+➤ List all running and stopped containers
+docker containers ls -a
+➤ Run vs Start Container 
+run: start a new container always
+start: start a existing containers
+➤ Docker container names
+docker container run - -publish 80:80 - -detach - -name 
+<Name> <Image_Name>
+➤ See logs of a specific container
+docker container logs <container_name>/<container_id>
+➤ See process running inside the containers
+docker container top <container_id>
+➤ Remove all unused containers
+docker container rm <space separated container ids>
+-------------
+4. Docker Internal Processing
+➤ Looks for the image in Image Cache 
+➤ Then looks in remote docker repository (default 
+hub.docker.com ) 
+➤ Download the latest version of image 
+➤ Create new container based on the image 
+➤ Gives it a virtual IP on private network inside docker engine 
+➤ Open port 80 on host machine and route to port 80 inside 
+container 
+➤ Starts container by using CMD in imager docker file
+------------
+5. Containers vs Virtual Machines
+➤ Containers and virtual machines both have similar resource 
+allocation and allocation benefits. 
+➤ Containers and VMs are functionally different because 
+containers virtualise the Operating System and VMs are 
+virtualise the hardware. 
+➤ Containers are more portable.
+➤ Containers are just processes. 
+➤ Containers are limited what resources they can access. 
+➤ Exit when process exits
+-------------
